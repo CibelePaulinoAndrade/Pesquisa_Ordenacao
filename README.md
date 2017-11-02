@@ -12,3 +12,4 @@ Métodos de Ordenação:
 6. Shell Sort
 7. Counting Sort
 8. Radix Sort
+9. Bucket Sort (Quick Sort auxiliando)
