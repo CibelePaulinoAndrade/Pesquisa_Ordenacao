@@ -1,9 +1,11 @@
 # Pesquisa_Ordenacao
 Estudando métodos de pesquisa e ordenação (Em construção)
 
-#Linguagem: Python
-
-Métodos de Ordenação:
+## Tecnologias:
+  1. Python 3.2.5.1
+  2. IDLE: Portable
+  
+## Métodos de Ordenação:
 1. Bubble Sort
 2. Selection Sort
 3. Insertion Sort
@@ -15,5 +17,5 @@ Métodos de Ordenação:
 9. Bucket Sort (Quick Sort auxiliando)
 10. Heap Sort
 
-Métodos de Pesquisa:
+## Métodos de Pesquisa:
 1. Pesquisa/Busca Linear
