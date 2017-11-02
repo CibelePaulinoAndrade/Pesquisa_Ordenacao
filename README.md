@@ -11,3 +11,4 @@ Métodos de Ordenação:
 5. Merge Sort
 6. Shell Sort
 7. Counting Sort
+8. Radix Sort
