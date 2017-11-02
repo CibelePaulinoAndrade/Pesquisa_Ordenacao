@@ -1,6 +1,7 @@
 # Pesquisa_Ordenacao
 Estudando métodos de pesquisa e ordenação (Em construção)
-Linguagem: Python
+
+#Linguagem: Python
 
 Métodos de Ordenação:
 1. Bubble Sort
@@ -8,3 +9,4 @@ Métodos de Ordenação:
 3. Insertion Sort
 4. Quick Sort
 5. Merge Sort
+6. Shell Sort
