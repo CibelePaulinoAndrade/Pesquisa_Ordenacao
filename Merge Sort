@@ -1,0 +1,58 @@
+#Merge Sort
+#Princípio: Dividir o problema em vários sub-problemas, resolver esses
+#sub-problemas através da recursividade e, por fim, unir as resoluções dos
+#sub-problemas.
+#Eficiente quando existe uma grande quantidade de elementos
+#Complexidade n log n.
+
+
+import random
+lista = []
+
+def mergeSort(lista):
+    #Função que implementa o método de ordenamento Merge Sort.
+    if len(lista) > 1:
+        meio = len(lista)//2
+        listaDaEsquerda = lista[:meio]
+        listaDaDireita = lista[meio:]
+        mergeSort(listaDaEsquerda)
+        mergeSort(listaDaDireita)
+        i = 0
+        j = 0
+        k = 0
+        while i < len(listaDaEsquerda) and j < len(listaDaDireita):
+            if listaDaEsquerda[i] < listaDaDireita[j]:
+                lista[k]=listaDaEsquerda[i]
+                i += 1
+            else:
+                lista[k]=listaDaDireita[j]
+                j += 1
+            k += 1
+        while i < len(listaDaEsquerda):
+            lista[k]=listaDaEsquerda[i]
+            i += 1
+            k += 1
+        while j < len(listaDaDireita):
+            lista[k]=listaDaDireita[j]
+            j += 1
+            k += 1
+
+
+def listaRan(tam, lista):
+    #Função gera uma 'lista' com 'tam' valores aleatórios.
+    random.seed()
+    i=0
+    while i<tam:
+        num = random.randint(1, 10*tam)
+        if num not in lista:
+            lista.append(num)
+            i+=1
+    print("Lista Desordenada:")
+    print(lista)
+
+
+listaRan(20, lista)
+mergeSort(lista)
+print("Lista Ordenada (Merge Sort):")
+print(lista)
+
