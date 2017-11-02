@@ -13,3 +13,4 @@ Métodos de Ordenação:
 7. Counting Sort
 8. Radix Sort
 9. Bucket Sort (Quick Sort auxiliando)
+10. Heap Sort
