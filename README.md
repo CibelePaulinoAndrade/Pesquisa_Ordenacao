@@ -14,3 +14,6 @@ Métodos de Ordenação:
 8. Radix Sort
 9. Bucket Sort (Quick Sort auxiliando)
 10. Heap Sort
+
+Métodos de Pesquisa:
+1. Pesquisa/Busca Linear
