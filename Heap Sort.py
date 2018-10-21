@@ -51,5 +51,5 @@ def listaRan(tam, lista):
 
 
 listaRan(20, lista)
-lista = heapSort(lista)
+heapSort(lista)
 
