@@ -8,7 +8,7 @@
 #Requer espaço constante de mémoria adicional.
 
 
-import random
+from RandomHelper import random_list
 
 def insertionSort(lista):
     #Função que implementa o método de ordenamento Insertion Sort.
@@ -20,21 +20,7 @@ def insertionSort(lista):
             j-=1
         lista[j+1]=chave
         
-    print("Lista Ordenada (Insertion Sort):")
-    print(lista)
+    return lista
 
-def listaRan(tam, lista):
-    #Função gera uma 'lista' com 'tam' valores aleatórios.
-    random.seed()
-    i=0
-    while i<tam:
-        num = random.randint(1, 10*tam)
-        if num not in lista:
-            lista.append(num)
-            i+=1
-    print("Lista Desordenada:")
-    print(lista)
 
-lista = []
-listaRan(20, lista)
-insertionSort(lista)
+print(insertionSort(random_list(20)))

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #Bubble Sort
 #Princípio: Troca de valores entre posições consecutivas.
 #Não é um algoritmo eficiente quando é necessária velocidade
@@ -5,7 +6,7 @@
 #Complexidade de ordem quadrática (n^2).
 
 
-import random
+from RandomHelper import random_list
 
 def bubbleSort(lista):
     #Função que implementa o método de ordenamento Bubble Sort.
@@ -16,19 +17,5 @@ def bubbleSort(lista):
     print("Lista Ordenada (Bubble Sort):")
     print(lista)
 
-def listaRan(tam, lista):
-    #Função gera uma 'lista' com 'tam' valores aleatórios.
-    random.seed()
-    i=0
-    while i<tam:
-        num = random.randint(1, 10*tam)
-        if num not in lista:
-            lista.append(num)
-            i+=1
-    print("Lista Desordenada:")
-    print(lista)
-
-lista = []
-listaRan(20, lista)
-bubbleSort(lista)
+bubbleSort(random_list(20))
 
