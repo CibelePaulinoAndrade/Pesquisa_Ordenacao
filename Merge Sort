@@ -4,7 +4,7 @@
 #sub-problemas.
 #Eficiente quando existe uma grande quantidade de elementos
 #Complexidade n log n.
-
+#Só pra ganhar uma camisa mesmo
 
 import random
 lista = []
@@ -37,7 +37,6 @@ def mergeSort(lista):
             j += 1
             k += 1
 
-
 def listaRan(tam, lista):
     #Função gera uma 'lista' com 'tam' valores aleatórios.
     random.seed()
@@ -50,9 +49,7 @@ def listaRan(tam, lista):
     print("Lista Desordenada:")
     print(lista)
 
-
 listaRan(20, lista)
 mergeSort(lista)
 print("Lista Ordenada (Merge Sort):")
 print(lista)
-
