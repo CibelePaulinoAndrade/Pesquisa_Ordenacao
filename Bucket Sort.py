@@ -4,8 +4,7 @@
 #o quick sort). 
 #Complexidade (Θ(n)), quando o vetor contém elementos uniformemente distribuídos.
 
-import random
-lista = []
+from RandomHelper import random_list
 
 def quickSort(lista):
     #Função que implementa o método de ordenamento Quick Sort.
@@ -35,20 +34,6 @@ def bucketSort(lista):
     return list_aux
 
 
-def listaRan(tam, lista):
-    #Função gera uma 'lista' com 'tam' valores aleatórios.
-    random.seed()
-    i=0
-    while i<tam:
-        num = random.randint(1, 10*tam)
-        if num not in lista:
-            lista.append(num)
-            i+=1
-    print("Lista Desordenada:")
-    print(lista)
 
-
-listaRan(20, lista)
-lista = bucketSort(lista)
 print("Lista Ordenada (Bucket Sort):")
-print(lista)
+print(bucketSort(random_list(20)))

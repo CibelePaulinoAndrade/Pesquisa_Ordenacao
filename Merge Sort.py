@@ -6,8 +6,7 @@
 #Complexidade n log n.
 
 
-import random
-lista = []
+from RandomHelper import random_list
 
 def mergeSort(lista):
     #Função que implementa o método de ordenamento Merge Sort.
@@ -36,23 +35,8 @@ def mergeSort(lista):
             lista[k]=listaDaDireita[j]
             j += 1
             k += 1
+    return lista
 
 
-def listaRan(tam, lista):
-    #Função gera uma 'lista' com 'tam' valores aleatórios.
-    random.seed()
-    i=0
-    while i<tam:
-        num = random.randint(1, 10*tam)
-        if num not in lista:
-            lista.append(num)
-            i+=1
-    print("Lista Desordenada:")
-    print(lista)
-
-
-listaRan(20, lista)
-mergeSort(lista)
-print("Lista Ordenada (Merge Sort):")
-print(lista)
+print(mergeSort(random_list(20)))
 

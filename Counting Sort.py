@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #Counting Sort 
 #Princípio: Determinar, para cada entrada, o número de elementos menor que ela.
 #Essa informação é utilizada para colocar a entrada na sua posição no array de saída.
