@@ -4,8 +4,7 @@
 #ou como um vetor.
 #Complexidade no melhor e no pior caso: O(n log2n) é o mesmo que O(n lgn)
 
-import random
-lista = []
+from RandomHelper import random_list
 
 def heapSort(lista):
     #Função que implementa o método de ordenamento Heap Sort.
@@ -34,22 +33,8 @@ def heapSort(lista):
         lista[fim], lista[0] = lista[0], lista[fim]  
         selet(0, fim)  
         fim -= 1 
-    print("Lista Ordenada (Heap Sort):")
-    print(lista)
+    return lista
 
-def listaRan(tam, lista):
-    #Função gera uma 'lista' com 'tam' valores aleatórios.
-    random.seed()
-    i=0
-    while i<tam:
-        num = random.randint(1, 10*tam)
-        if num not in lista:
-            lista.append(num)
-            i+=1
-    print("Lista Desordenada:")
-    print(lista)
-
-
-listaRan(20, lista)
-lista = heapSort(lista)
+print("Lista Ordenada (Heap Sort):")
+print(heapSort(random_list(20)))
 
